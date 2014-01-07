@@ -116,6 +116,7 @@ module Zuora
       Savon::Client.new do
         wsdl.document = WSDL
         http.auth.ssl.verify_mode = :none
+        http.proxy="http://localhost:8888"
       end
     end
 
